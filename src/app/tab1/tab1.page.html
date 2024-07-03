@@ -12,6 +12,19 @@
       <ion-title size="large">Tab 1</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  
+  <ion-img [src]="image"></ion-img>
+  <ion-button expand="full" (click)="captureImage()" [disabled]="!workerReady">Capture Image</ion-button>
+  <ion-button expand="full" (click)="recognizeImage()" [disabled]="!workerReady">Recognize Image</ion-button>
+  <!-- <app-explore-container name="Tab 1 page"></app-explore-container> -->
+  <ion-card *ngIf="workerReady && captureProgress > 0">
+    <ion-header>
+      <ion-card-title>
+        Capture progress: {{captureProgress}}%
+      </ion-card-title>
+    </ion-header>
+    <ion-card-content>
+      {{ocrResult}}
+    </ion-card-content>
+  </ion-card>
 </ion-content>

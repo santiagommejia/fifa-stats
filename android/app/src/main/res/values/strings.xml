@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Fifa Stats</string>
+    <string name="title_activity_main">Fifa Stats</string>
+    <string name="package_name">ionic.fifa.stats</string>
+    <string name="custom_url_scheme">ionic.fifa.stats</string>
+</resources>

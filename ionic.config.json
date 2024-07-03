@@ -1,5 +1,7 @@
 {
   "name": "Fifa Stats",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
